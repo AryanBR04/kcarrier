@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply antialiased text-gray-900 bg-gray-50;
+  }
+}
+
+@media print {
+  @page {
+    margin: 0;
+    size: auto;
+  }
+
+  body {
+    @apply bg-white;
+  }
+
+  /* Hide all UI elements */
+  nav,
+  button,
+  .export-toolbar,
+  .validation-warning {
+    display: none !important;
+  }
+
+  /* Hide the page title wrapper if not covered by export-toolbar */
+  .page-title {
+    display: none !important;
+  }
+
+
+
+  /* Toolbar container */
+
+  /* Ensure preview takes full width/height */
+  #resume-preview {
+    transform: none !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 20mm !important;
+    /* Add print margins here */
+    box-shadow: none !important;
+    min-height: auto !important;
+  }
+
+  /* Ensure background colors print */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Page break rules */
+  section,
+  .experience-item,
+  .project-item {
+    break-inside: avoid;
+  }
+}
