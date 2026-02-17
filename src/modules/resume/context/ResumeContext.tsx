@@ -32,7 +32,7 @@ export const useResume = () => {
 
 const initialData: ResumeData = {
     selectedTemplate: 'modern',
-    selectedColor: 'hsl(168, 60%, 40%)', // Default Teal
+    selectedColor: '#14b8a6', // Default Teal
     personalInfo: {
         fullName: '',
         email: '',

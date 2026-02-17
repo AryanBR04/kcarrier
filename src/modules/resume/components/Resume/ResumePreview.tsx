@@ -3,7 +3,7 @@ import { useResume } from '../../context/ResumeContext';
 
 export const ResumePreview: React.FC = () => {
     const { resumeData } = useResume();
-    const { personalInfo, summary, education, experience, projects, skills, selectedTemplate = 'modern', selectedColor = 'hsl(168, 60%, 40%)' } = resumeData;
+    const { personalInfo, summary, education, experience, projects, skills, selectedTemplate = 'modern', selectedColor = '#14b8a6' } = resumeData;
 
     const hasData = personalInfo.fullName || summary || education.length > 0;
 

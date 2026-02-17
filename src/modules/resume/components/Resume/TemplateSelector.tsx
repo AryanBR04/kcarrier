@@ -5,7 +5,7 @@ import { Minus } from 'lucide-react';
 export const TemplateSelector: React.FC = () => {
     const { resumeData, setTemplate, setColor } = useResume();
     const currentTemplate = resumeData.selectedTemplate || 'modern';
-    const currentColor = resumeData.selectedColor || 'hsl(168, 60%, 40%)';
+    const currentColor = resumeData.selectedColor || '#14b8a6';
 
     const templates = [
         { id: 'modern', name: 'Modern', color: 'bg-blue-100' },
@@ -14,11 +14,11 @@ export const TemplateSelector: React.FC = () => {
     ] as const;
 
     const colors = [
-        { name: 'Teal', value: 'hsl(168, 60%, 40%)', class: 'bg-teal-700' },
-        { name: 'Navy', value: 'hsl(220, 60%, 35%)', class: 'bg-blue-900' },
-        { name: 'Burgundy', value: 'hsl(345, 60%, 35%)', class: 'bg-rose-900' },
-        { name: 'Forest', value: 'hsl(150, 50%, 30%)', class: 'bg-green-900' },
-        { name: 'Charcoal', value: 'hsl(0, 0%, 25%)', class: 'bg-gray-800' },
+        { name: 'Teal', value: '#14b8a6', class: 'bg-teal-700' },
+        { name: 'Navy', value: '#1e3a8a', class: 'bg-blue-900' },
+        { name: 'Burgundy', value: '#881337', class: 'bg-rose-900' },
+        { name: 'Forest', value: '#14532d', class: 'bg-green-900' },
+        { name: 'Charcoal', value: '#374151', class: 'bg-gray-800' },
     ];
 
     return (

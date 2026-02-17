@@ -83,14 +83,14 @@ export const DashboardHome: React.FC = () => {
                                 <Radar
                                     name="Skills"
                                     dataKey="A"
-                                    stroke="hsl(245, 58%, 51%)"
+                                    stroke="#3733cc"
                                     strokeWidth={2}
-                                    fill="hsl(245, 58%, 51%)"
+                                    fill="#3733cc"
                                     fillOpacity={0.3}
                                 />
                                 <Tooltip
                                     contentStyle={{ borderRadius: '8px', border: 'none', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)' }}
-                                    itemStyle={{ color: 'hsl(245, 58%, 51%)', fontWeight: 600 }}
+                                    itemStyle={{ color: '#3733cc', fontWeight: 600 }}
                                 />
                             </RadarChart>
                         </ResponsiveContainer>
